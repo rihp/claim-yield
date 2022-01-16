@@ -1,5 +1,17 @@
 import React from "react";
 import { useWeb3ApiQuery } from "@web3api/react";
+// The Polywrap client is imported here 
+//import { Web3ApiClient } from '@web3api/client-js';
+
+// The wrapper client is instantiated below
+//const client = new Web3ApiClient();
+//client.query({
+//  uri: 'ens/api.helloworld.web3api.eth',
+//  query: `{
+//    logMessage(message: "HOLA ROB!")
+//  }`,
+//});
+
 
 export const HelloWorld: React.FC = () => {
   const [message, setMessage] = React.useState("");
@@ -25,11 +37,13 @@ export const HelloWorld: React.FC = () => {
     setMessage(event?.target.value);
   };
 
+
+  // What you return below is HTML that will be rendered on the React site
   return (
     <>
-      <div className="main__heading">"Hello World"<br/>from Web3API!</div>
+      <div className="main__heading">"Hello World"<br/>from DaoAdvocate!</div>
       <div className="main__text">
-        Test the "Hello World" Web3API by:<br/>
+        Test the Apes.Capital wrapper:<br/>
           1. type into the input below<br/>
           2. click the submit button<br/>
           3. view the output in <a
