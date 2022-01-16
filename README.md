@@ -1,3 +1,20 @@
+Claim Wrapper
+
+Objective: Claim tokens from AAVE on Avax
+
+Dependecies: 
+- Have Docker Running
+- Ethers.js Polywrap Plugin
+- An ethereum wallet with AVAX tokens
+
+Steps:
+- clone the repo
+- `yarn`
+- `yarn build`
+- `yarn start`
+- edit the demo react app : `src/HelloWorld.tsx`
+-- Question: where can i see a list of existing polywrap ens addresses ?
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
